@@ -42,11 +42,17 @@ button.addEventListener('click', function(){
     document.getElementById('fullNameResult').innerText = fullName;
     document.getElementById('priceResult').innerText = price.toFixed(2) + '$'
 
-    // seleziono il div per il numero casuale della carrozza
+    // seleziono il div per il numero casuale della carrozza e lo assegno
     let casualNumber = document.getElementById('casualNumber');
     let numberOneToNine = numberCasualGeneration(1,9);
     casualNumber.innerText = numberOneToNine;
     console.log( 'il numero casuale della carrozza è ' + numberOneToNine);
+
+    // seleziono il div per il numero casuale del biglietto e lo assegno
+    let numberTicket = document.getElementById('codeCP');
+    let numberCasualTicket = numberCasualGeneration(90000,99999);
+    numberTicket.innerText = numberCasualTicket;
+    console.log('il numero casuale del biglietto è ' + numberCasualTicket);
 
     // resetto il form al click
     let form = document.getElementById('form');
