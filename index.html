@@ -21,11 +21,17 @@
                                 </div>
                                 <div class="col-3">
                                     <label for="km" class="form-label d-block text-center text-purple">Km da percorrere</label>
-                                    <input type="text" id="km" class="form-control bd-color-purple">
+                                    <input type="number" id="km" class="form-control bd-color-purple">
                                 </div>
                                 <div class="col-3">
                                     <label for="age" class="form-label d-block text-center text-purple">Fascia d'età</label>
-                                    <input type="text" id="age" class="form-control bd-color-purple">
+                                    <!-- <input type="select" id="age" class="form-control bd-color-purple"> -->
+                                    <select class="form-select" id="age">
+                                        <option selected>Scegli un'opzione</option>
+                                        <option value="17">Minorenne</option>
+                                        <option value="66">Over 65</option>
+                                        <option value="20">Adulto</option>
+                                      </select>
                                 </div>
                                 <div class="col-12 py-4 text-center">
                                     <button type="button" id="button" class="btn border">Genera</button>
@@ -46,7 +52,7 @@
                                 <div class="row border">
                                     <div class="col-3 bg-body-secondary pb-5">
                                         <div class="fw-bold font-md pt-2">NOME PASSEGGERO</div>
-                                        <div class="fw-bold font-sm" id="fullNameResult">Jon Snow</div>
+                                        <div class="fw-bold font-sm" id="fullNameResult"></div>
                                     </div>
                                     <div class="col-3">
                                         <div class="fw-bold font-sm pt-2">Offerta</div>
@@ -62,7 +68,7 @@
                                     </div>
                                     <div class="col-2">
                                         <div class="font-sm fw-bold pt-2">Costo biglietto</div>
-                                        <div class="font-sm pt-4" id="priceResult">price</div>
+                                        <div class="font-sm pt-4" id="priceResult"></div>
                                     </div>
                                 </div>
                             </div>
