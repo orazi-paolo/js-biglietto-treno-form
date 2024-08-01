@@ -16,6 +16,9 @@ function numberCasualGeneration(min,max) {
 // quanto clicco sul bottone stampo in pagina il valore 
 button.addEventListener('click', function(){
 
+    // impedisco il caricamento pagina
+    event.preventDefault();
+
     // do il valore interno degli input
     const km = kmField.value;
     const fullName = fullNameField.value;
