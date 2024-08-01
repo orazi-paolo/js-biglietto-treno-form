@@ -21,3 +21,9 @@
 .bd-color-purple{
     border-color: #b91450 !important; 
 }
+.font-sm{
+    font-size: 12px;
+}
+.font-md{
+    font-size: 14px;
+}
