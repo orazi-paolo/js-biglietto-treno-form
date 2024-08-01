@@ -7,6 +7,12 @@ const button = document.getElementById('button');
 const form = document.getElementById('form');
 const resetButton = document.getElementById('resetButton');
 
+
+// genero numero casuale
+function numberCasualGeneration(min,max) {
+    return Math.floor(Math.random() * (max - min +1)) + min;
+}
+
 // quanto clicco sul bottone stampo in pagina il valore 
 button.addEventListener('click', function(){
 
@@ -35,6 +41,12 @@ button.addEventListener('click', function(){
     // inserisco nel biglietto i risultati
     document.getElementById('fullNameResult').innerText = fullName;
     document.getElementById('priceResult').innerText = price.toFixed(2) + '$'
+
+    // seleziono il div per il numero casuale della carrozza
+    let casualNumber = document.getElementById('casualNumber');
+    let numberOneToNine = numberCasualGeneration(1,9);
+    casualNumber.innerText = numberOneToNine;
+    console.log( 'il numero casuale della carrozza è ' + numberOneToNine);
 
     // resetto il form al click
     let form = document.getElementById('form');
