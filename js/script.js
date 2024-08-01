@@ -56,6 +56,11 @@ button.addEventListener('click', function(){
         let numberCasualTicket = numberCasualGeneration(90000,99999);
         numberTicket.innerText = numberCasualTicket;
         console.log('il numero casuale del biglietto è ' + numberCasualTicket);
+
+        // quando schiaccio mi compare il biglietto
+        const ticket = document.getElementById('ticket');
+        ticket.classList.remove('d-none');
+        ticket.classList.add('d-block');
         
         // resetto il form al click
         let form = document.getElementById('form');
