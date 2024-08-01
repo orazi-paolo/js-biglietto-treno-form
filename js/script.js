@@ -4,7 +4,8 @@ const fullNameField = document.getElementById('fullName');
 const kmField = document.getElementById('km');
 const ageField = document.getElementById('age');
 const button = document.getElementById('button');
-
+const form = document.getElementById('form');
+const resetButton = document.getElementById('resetButton');
 
 // quanto clicco sul bottone stampo in pagina il valore 
 button.addEventListener('click', function(){
@@ -40,6 +41,14 @@ button.addEventListener('click', function(){
     form.reset();
 
 })
+
+// resetto il form al click di annulla
+resetButton.addEventListener('click', function(){
+    form.reset();
+
+})
+
+
 
 
 
