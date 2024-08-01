@@ -31,6 +31,10 @@ button.addEventListener('click', function(){
     console.log('Età ' + age);
     console.log('Il prezzo del biglietto è di ' + price.toFixed(2) + ' euro');
 
+    // inserisco nel biglietto i risultati
+    document.getElementById('fullNameResult').innerText = fullName;
+    document.getElementById('priceResult').innerText = price.toFixed(2) + '$'
+
     // resetto il form al click
     let form = document.getElementById('form');
     form.reset();
