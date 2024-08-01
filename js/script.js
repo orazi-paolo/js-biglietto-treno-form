@@ -21,7 +21,7 @@ button.addEventListener('click', function(){
     const fullName = fullNameField.value;
     const age = ageField.value;
 
-    if (fullName.length > 0 || km > 0 || age > 0){
+    if (fullName.length > 0 && km > 0 && age > 0){
 
         
         // imposto il prezzo base e i sconti
