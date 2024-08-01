@@ -1,0 +1,23 @@
+
+.btn{
+    background-color: lightgray !important;
+    color: #b91450 !important;
+    font-weight: bold !important;
+}
+.btn:hover{
+    border-color: yellow !important;
+}
+
+/* utils */
+.back-color-purple{
+    background-color: #b91450;
+}
+.h-100-vh{
+    height: 100vh;
+}
+.text-purple{
+    color: #b91450;
+}
+.bd-color-purple{
+    border-color: #b91450 !important; 
+}
